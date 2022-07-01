@@ -24,14 +24,30 @@ limitations under the License.
 
 > Test if a value is an array-like object containing only positive numbers.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/assert-is-positive-number-array
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import isPositiveNumberArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-positive-number-array@deno/mod.js';
+var isPositiveNumberArray = require( '@stdlib/assert-is-positive-number-array' );
 ```
 
 #### isPositiveNumberArray( value )
@@ -41,7 +57,7 @@ Tests if a `value` is an array-like object containing **only** positive numbers.
 <!-- eslint-disable no-new-wrappers -->
 
 ```javascript
-import Number from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-ctor@deno/mod.js';
+var Number = require( '@stdlib/number-ctor' );
 
 var bool = isPositiveNumberArray( [ 3.0, new Number(3.0) ] );
 // returns true
@@ -57,7 +73,7 @@ Tests if a `value` is an array-like object `array` containing **only** primitive
 <!-- eslint-disable no-new-wrappers -->
 
 ```javascript
-import Number from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-ctor@deno/mod.js';
+var Number = require( '@stdlib/number-ctor' );
 
 var bool = isPositiveNumberArray.primitives( [ 1.0, 5.0, 10.0 ] );
 // returns true
@@ -73,7 +89,7 @@ Tests if a `value` is an array-like object `array` containing **only** object po
 <!-- eslint-disable no-new-wrappers, max-len -->
 
 ```javascript
-import Number from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-ctor@deno/mod.js';
+var Number = require( '@stdlib/number-ctor' );
 
 var bool = isPositiveNumberArray.objects( [ new Number(1.0), new Number(1.0) ] );
 // returns true
@@ -95,8 +111,8 @@ bool = isPositiveNumberArray.objects( [ 1.0, 5.0, 10.0 ] );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import Number from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-ctor@deno/mod.js';
-import isPositiveNumberArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-positive-number-array@deno/mod.js';
+var Number = require( '@stdlib/number-ctor' );
+var isPositiveNumberArray = require( '@stdlib/assert-is-positive-number-array' );
 
 var bool = isPositiveNumberArray( [ 5.0, 0.2, 3.9 ] );
 // returns true
@@ -146,7 +162,7 @@ bool = isPositiveNumberArray( 78.0 );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -202,16 +218,17 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 [deno-url]: https://github.com/stdlib-js/assert-is-positive-number-array/tree/deno
 [umd-url]: https://github.com/stdlib-js/assert-is-positive-number-array/tree/umd
 [esm-url]: https://github.com/stdlib-js/assert-is-positive-number-array/tree/esm
+[branches-url]: https://github.com/stdlib-js/assert-is-positive-number-array/blob/main/branches.md
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/assert-is-positive-number-array/main/LICENSE
 
 <!-- <related-links> -->
 
-[@stdlib/assert/is-array]: https://github.com/stdlib-js/assert-is-array/tree/deno
+[@stdlib/assert/is-array]: https://github.com/stdlib-js/assert-is-array
 
-[@stdlib/assert/is-number]: https://github.com/stdlib-js/assert-is-number/tree/deno
+[@stdlib/assert/is-number]: https://github.com/stdlib-js/assert-is-number
 
-[@stdlib/assert/is-positive-number]: https://github.com/stdlib-js/assert-is-positive-number/tree/deno
+[@stdlib/assert/is-positive-number]: https://github.com/stdlib-js/assert-is-positive-number
 
 <!-- </related-links> -->
 
