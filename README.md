@@ -24,38 +24,30 @@ limitations under the License.
 
 > Test if a value is an array-like object containing only positive numbers.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/assert-is-positive-number-array
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-isPositiveNumberArray = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-positive-number-array@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var isPositiveNumberArray = require( 'path/to/vendor/umd/assert-is-positive-number-array/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-positive-number-array@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.isPositiveNumberArray;
-})();
-</script>
+var isPositiveNumberArray = require( '@stdlib/assert-is-positive-number-array' );
 ```
 
 #### isPositiveNumberArray( value )
@@ -118,14 +110,9 @@ bool = isPositiveNumberArray.objects( [ 1.0, 5.0, 10.0 ] );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/number-ctor@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-positive-number-array@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var Number = require( '@stdlib/number-ctor' );
+var isPositiveNumberArray = require( '@stdlib/assert-is-positive-number-array' );
 
 var bool = isPositiveNumberArray( [ 5.0, 0.2, 3.9 ] );
 // returns true
@@ -144,11 +131,6 @@ bool = isPositiveNumberArray( [ 1, 'abc', 3 ] );
 
 bool = isPositiveNumberArray( 78.0 );
 // returns false
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -163,9 +145,9 @@ bool = isPositiveNumberArray( 78.0 );
 
 ## See Also
 
--   <span class="package-name">[`@stdlib/assert/is-array`][@stdlib/assert/is-array]</span><span class="delimiter">: </span><span class="description">test if a value is an array.</span>
--   <span class="package-name">[`@stdlib/assert/is-number`][@stdlib/assert/is-number]</span><span class="delimiter">: </span><span class="description">test if a value is a number.</span>
--   <span class="package-name">[`@stdlib/assert/is-positive-number`][@stdlib/assert/is-positive-number]</span><span class="delimiter">: </span><span class="description">test if a value is a number having a positive value.</span>
+-   <span class="package-name">[`@stdlib/assert-is-array`][@stdlib/assert/is-array]</span><span class="delimiter">: </span><span class="description">test if a value is an array.</span>
+-   <span class="package-name">[`@stdlib/assert-is-number`][@stdlib/assert/is-number]</span><span class="delimiter">: </span><span class="description">test if a value is a number.</span>
+-   <span class="package-name">[`@stdlib/assert-is-positive-number`][@stdlib/assert/is-positive-number]</span><span class="delimiter">: </span><span class="description">test if a value is a number having a positive value.</span>
 
 </section>
 
@@ -242,11 +224,11 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/assert/is-array]: https://github.com/stdlib-js/assert-is-array/tree/umd
+[@stdlib/assert/is-array]: https://github.com/stdlib-js/assert-is-array
 
-[@stdlib/assert/is-number]: https://github.com/stdlib-js/assert-is-number/tree/umd
+[@stdlib/assert/is-number]: https://github.com/stdlib-js/assert-is-number
 
-[@stdlib/assert/is-positive-number]: https://github.com/stdlib-js/assert-is-positive-number/tree/umd
+[@stdlib/assert/is-positive-number]: https://github.com/stdlib-js/assert-is-positive-number
 
 <!-- </related-links> -->
 
